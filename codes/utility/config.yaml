@@ -19,8 +19,6 @@ ASTRO:
   diffusion_decay: 0.7 
   diffusion_lr: 1e-7
   diffusion_batch_size: 64
-  preference_guide: True
-  item_emb_guide: True
   ddim: True
   max_del_ratio: 0.01
   # CL arguments

@@ -1,0 +1,41 @@
+ASTRO:
+  # basic arguments
+  regs: 1e-5
+  lr: 1e-4
+  feat_embed_dim: 64
+  alpha: 1.0
+  ta_weight: 0.3
+  n_layers: 2
+  target_aware: True
+  has_norm: True
+  # MOON arguments
+  noise_scale: 0.01
+  noise_min: 0.001
+  noise_max: 0.01
+  steps: 10 
+  temp: 3
+  hidden_units: 128
+  time_embed_dim: 16
+  diffusion_decay: 0.7 
+  diffusion_lr: 1e-7
+  diffusion_batch_size: 64
+  preference_guide: True
+  item_emb_guide: True
+  ddim: True
+  max_del_ratio: 0.01
+  # CL arguments
+  cl_temp: 0.2
+  cl_decay: 0.01 
+  # MARS arguments
+  ratio: 0.05 
+
+MONET:
+  regs: 1e-5
+  lr: 1e-4
+  embed_size: 64
+  feat_embed_dim: 64
+  alpha: 1.0
+  beta: 0.3
+  n_layers: 2
+  has_norm: True
+  target_aware: True

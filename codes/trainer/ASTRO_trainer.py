@@ -37,7 +37,6 @@ class ASTRO_trainer:
         # argument settings
         # basic arguments
         self.args = args
-        # MONET arguments
         self.feat_embed_dim = args['feat_embed_dim']
         self.lr = eval(args['lr']) if type(args['lr']) == str else args['lr']
         self.batch_size = args['batch_size']
